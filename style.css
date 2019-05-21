@@ -1,44 +1,64 @@
 :root {
   --hours-width: 25%;
   --minutes-width: 35%;
-  --seconds-width: 45%;
+  --seconds-width: 40%;
   box-sizing: border-box;
   color: white;
 }
 
-.clock {
-  position: relative;
-  width: 300px;
-  height: 300px;
-  padding: 20px;
-  border: 1px solid;
-  border-radius: 50%;
-  background: lightskyblue url("https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=640&q=80") no-repeat center;
+body {
+  background: lightskyblue url("https://images.unsplash.com/photo-1516331138075-f3adc1e149cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1983&q=80");
   background-size: cover;
+  background-position: center;
 }
 
-.twelve {
-  position: absolute;
-  font-size: 1.5em;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.center {
+.clock {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 10px;
-  height: 10px;
+  width: 300px;
+  height: 300px;
+  border: 3px solid #fff;
   border-radius: 50%;
-  background: #fff;
+  /* background: lightskyblue url("https://images.unsplash.com/photo-1516339901601-2e1b62dc0c45?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=640&q=80") no-repeat center;
+  background-size: cover; */
+}
+
+.number {
+  position: absolute;
+  font-size: 1.75em;
+}
+
+.twelve {
+  left: 50%;
+  top: 20px;
+  transform: translateX(-50%);
+}
+
+.six {
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+}
+
+.three {
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.nine {
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .hand {
   position: absolute;
   top: 50%;
-  height: 3px;
+  transform: translateY(-50%);
+  height: 2px;
   background: #fff;
   transform-origin: right;
   border-top-left-radius: 20%;
